@@ -1,0 +1,157 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 70px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom: solid lightgray;
+    z-index: 10;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+}
+.logo{
+    height: 24px;
+}
+.middle-section{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-top: 1px;
+    max-width: 500px;
+    margin-left: 70px;
+    margin-right: 35px;
+}
+.search{
+    flex: 1;
+    width: 0px;
+    font-size: 16px;
+    padding-left: 10px;
+    height: 30px;
+    border: solid rgb(192,192,192);
+    border-width: 1px;
+    box-shadow: inset 0px 0px 1px lightgray;
+    
+}
+.search::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    padding-left: 9px;
+}
+.search-button{
+    width: 66px;
+    background-color: rgb(238, 238, 238);
+    border-width: 1px;
+    border: solid rgb(192,192,192);
+    border-width: thin;
+    padding-top: 5px;
+    margin-left: -1px;
+    height: 34px;
+    margin-right: 10px;
+}
+.search-button,
+.vsearch-button,
+.upload-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.search-button .tool-tip,
+.vsearch-button .tool-tip,
+.upload-con .tooltip{
+    position: absolute;
+    background-color: lightgray;
+    color: white;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: Roboto, Arial;
+}
+
+.search-button:hover .tool-tip,
+.vsearch-button:hover .tool-tip,
+.upload-con:hover .tooltip {
+    opacity: 1;
+}
+
+.ss{
+    height: 24px;
+    width: 24px;
+}
+.vsearch-button{
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    background-color: rgb(238, 238, 238);
+    width: 40px;
+    height: 38px;
+    padding-top: 4px;
+    padding-right: 5px;
+    position: relative;
+}
+
+.vss{
+    height: 20px;
+    width: 30px;
+}
+.right-section{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.upload{
+    height: 24px;
+}
+.apps{
+    height: 24px;
+}
+.notifications{
+    height: 24px;
+}
+.notify{
+    position: relative;
+}
+.notify-number{
+    position: absolute;
+    background-color: rgb(252, 85, 85);
+    color: white;
+    font-family: Roboto;
+    top: -3px;
+    right: -3px;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+.profile{
+    height: 32px;
+    border-radius: 16px;
+    width: 32px;
+}
